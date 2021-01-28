@@ -1,0 +1,383 @@
+/* GENERAL */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    font-family: 'maven pro';
+    font-size: 15px;
+    width: auto;
+}
+h1, h2,h3,h4
+{
+  color: #444;  
+}
+
+h4
+{
+    font-family: 'maven pro';
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+p,a
+{
+    line-height: 20px;
+    color: #777;
+    font-size: 0.85rem;
+    font-family: 'maven pro';
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: #444;
+}
+.wrapper
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px ;
+}
+
+small
+{
+    font-size: 13px;
+    font-style:italic;
+}
+
+
+/* HEADER */
+
+header 
+{
+    height: 0px;   
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+
+}
+.navGauche{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 60px;
+    width: 50%;
+    
+}
+
+.navDroite{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+    width: 50%;
+    
+}
+header nav ul li a
+{
+    text-transform: uppercase;
+    padding-left: 80px;
+    font-size: 1.2rem;
+    color: white;
+}
+#imageLogo{
+    height: 60px;
+    width: auto;
+    margin-top: 30px;
+   
+}
+
+/* MAIN IMAGE */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    max-width: 100vw;
+    margin: 0 ;
+}
+#main-image
+{
+    background: url('imagesSiteGang/main_image.JPG')  center  no-repeat  ;
+    background-size:  cover;
+    width: 100%;
+    max-width: 100vw;
+    
+    /* width: 100vw; */
+}
+@media all and (max-device-width:780px){
+    #main-image{
+        
+    }
+    #main-image-h2{
+        padding:900px 40px 2px 0;
+    }
+   
+}
+#main-image h2
+{
+    padding: 26vw 40px 2px 0;
+    border: 400px;
+    text-transform: uppercase; opacity: 96%;
+    text-align: center;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.divCitation{
+    width: 840px;
+    margin: 0 auto;
+    padding:80px 10px ;
+    
+}
+
+/* IMAGE BARRES*/
+
+.image-barres{
+    height: 30rem;
+    width: 50rem;
+   
+}
+#image-barres{
+    
+    text-align: center;
+    padding: 6rem;
+}
+/* IMAGE BOX*/
+
+.image-box{
+    height: 38rem;
+    width: 50rem;
+    
+}
+#image-box{
+    
+    text-align: center;
+    padding: 8rem;
+}
+
+
+/* CERTIFICATIONS */
+
+
+
+.divCertificate{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+    
+}
+
+.divCertificate >li,img,h4{
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+
+}
+
+@media all and (max-device-width:480px){
+    .divCertificate{
+        
+        flex-direction: column;
+      
+       
+        
+    }
+}
+
+/* CONTACT */
+.instagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+#idInsta{
+    text-align: center;
+    font-size: 1rem;
+}
+.lightwidget-widget{
+    margin-top: 2rem;
+}
+hr{
+    text-align: center;
+    margin: auto;
+    width: 45%;
+}
+
+.basPage{
+    text-align: center;
+    padding: 2rem;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 11rem 28rem;
+    text-align: justify;
+}
+.faq >h4{
+    text-transform: inherit;
+    font-weight: 600;
+    
+}
+.faq >p{
+    text-align: center;
+}
+
+.instagram_gallery{
+    display: grid;
+    /* justify-content: center; */
+/*    
+    column-gap: 30px; 
+   */
+}
+
+@media screen and (max-width:768px){
+    .instagram_gallery{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .instagram_gallery{
+        grid-template-columns: repeat(2,1fr)
+
+    }
+    
+}
+@media screen and (min-width: 1270px){
+    .instagram_gallery{
+        grid-template-columns: repeat(4,1fr)
+
+    }
+    
+}
+
+.instagram_gallery img{
+    width: 18rem;
+}
+
+/* --------- A PROPOS---------- */
+
+.article{
+    width: 80%;
+    height: 80vh;
+    background-color: rgb(240, 240, 240);
+    margin: auto;
+    margin-top: 25vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+
+}
+
+@media all and (max-device-width:767px){
+    .article{
+        
+        flex-direction: column;
+      
+    }
+    
+   
+}
+
+
+.article img{
+    width: 300px;
+    /* height: 80%; */
+    padding: 5% 10%;
+}
+
+#article_1 img{
+    width: 600px;
+    /* height: 75%; */
+    padding: 5% 5%;
+}
+
+.texte{
+    text-align: left;
+    padding-right: 10%; 
+}
+
+#article_1 .texte{
+    padding-right: 5%;
+}
+
+#article_2 .texte{
+    padding-left: 10%;
+}
+
+#article_3 .texte{
+   
+    padding-right: 15%;
+
+}
+span{
+    font-weight: 600;
+}
+
+
+/* 
+----BAS DE PAGE--- */
+
+.basdepage{
+    width: 100%;
+    height: 30vh;
+    background-color:rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.basdepage ul{
+    display: flex;
+    list-style: disc;
+    justify-content: space-between;
+}
+
+.basdepage ul li{
+    padding-right: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

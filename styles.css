@@ -120,9 +120,7 @@ main{
     /* width: 100vw; */
 }
 @media all and (max-device-width:780px){
-    #main-image{
-        
-    }
+    
     #main-image-h2{
         padding:900px 40px 2px 0;
     }

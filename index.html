@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesmedia.css" rel="stylesheet">
+    <link href="styles_tablette.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles_mobile.css">
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
@@ -18,103 +21,105 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="jquery.instagramFeed.js"></script>
     <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/3c7f5856f6.js" crossorigin="anonymous"></script>
+    <script src="https: //kit.fontawesome.com/3c7f5856f6.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="imagesSiteGang/favicon.ico" />
+    <meta property="og:description"
+        content="Bienvenue chez GANG, la nouvelle marque d'encas sucrés 100% naturelle et gourmande ! Découvrez la barre GANG goût brownie coco à tomber !" />
+    <meta itemprop="description"
+        content="Bienvenue chez GANG, la nouvelle marque d'encas sucrés 100% naturelle et gourmande ! Découvrez la barre GANG goût brownie coco à tomber !" />
     <title>GANG</title>
 </head>
 
 <body>
-    <main >
-    <header>
-        <div class="wrapper">
-
+    
+        <div id="main-image">
+            <picture>
+                <source media="(max-width: 768px)" srcset="imagesSiteGang/girls_banc-mobile.jpg">
+                <source media="(max-width: 1080px)" srcset="imagesSiteGang/girls_banc-redi.jpg">
+                <img src="imagesSiteGang/girls_banc.JPG" alt="Girls_gang">
+            </picture>
+            <h2 id="mantras"><br><strong>"le plaisir d'abord, le naturel toujours,<br> le gang à la folie"</strong></h2>
             <nav>
-                <ul class="navGauche">
-                    <li><a href="index.html">ACCUEIL</a></li>
+                
+                    <li class="navGauche"><a href="index.html"><h1>ACCUEIL</h1></a></li>
                     <!-- <li><a href="shop.html">SHOP</a></li> -->
-
-                </ul>
-                <img id="imageLogo" src="imagesSiteGang/gang logo HD transparent png[38517].png">
-                <ul class="navDroite">
-                    <li><a id="apropos" href="apropos.html">à PROPOS</a></li>
+                    <li><a href="index.html"><img id="imageLogo" src="imagesSiteGang/gang logo HD transparent png 50px.png "></a></li>           
+                    <li class="navDroite"><a id="apropos" href="apropos.html"><h1>à PROPOS</h1></a></li>
                     <!-- <li><a href="contact.html">CONTACT</a></li> -->
-                </ul>
+                
             </nav>
         </div>
-    </header>
-
-    <section id="main-image">
-
-        <div class="divCitation">
-            <h2><br><strong>"le plaisir d'abord, le naturel toujours,<br> le gang à la folie"</strong></h2>
-
-        </div>
-    </section>
-    <div class="container">
-        <section id="image-barres">
-            <img class="image-barres" src="imagesSiteGang/barres-roses.jpg">
-        </section>
-
-        <section id="certificates">
-
-            <ul class="divCertificate">
-                <li id="bio">
-                    <img src="imagesSiteGang/icon-bio.png">
-                    <h4>Biologique</h4>
-                    <p>Dans un souci de qualité et de traçabilité, nous avons fait le choix de vous proposer des
-                        ingrédients qualitatifs issus de l’agriculture biologique. </p>
-                </li>
-                <li id="gluten">
-                    <img src="imagesSiteGang/icon-gluten.png">
-                    <h4>Sans gluten</h4>
-                    <p>Parce qu'il n'y a pas de raison pour que les intolérants et les allergiques au gluten ne puissent
-                        pas se faire plaisir, nos produits sont certifiés sans gluten. </p>
-                </li>
-                <li id="ogm">
-                    <img src="imagesSiteGang/icon-ogm.png">
-                    <h4>Sans additif</h4>
-                    <p>Nous utilisons des produits qui se conservent naturellement et qui ne nécessitent pas l’ajout
-                        d’additifs ou de conservateurs chimiques.</p>
-                </li>
-                <li id="local">
-                    <img src="imagesSiteGang/icon-local.png">
-                    <h4>Fabriqué en france</h4>
-                    <p>Afin de soutenir et de valoriser les filières de production françaises, l’ensemble de nos
-                        recettes sont élaborées et produites exclusivement en France. </p>
-
-                </li>
-
-            </ul>
-
-        </section>
-
-        <section id="image-box">
-            <img class="image-box" src="imagesSiteGang/barre-brownie-coco-boîte.jpg" style="margin :auto">
-        </section>
 
 
-        <footer>
-            <!-- LightWidget WIDGET -->
-            <div class="instagram">
-                <p> Retrouvez-nous sur <a href="https://www.instagram.com/lehealthygang/" target="_blank" id="idInsta">@lehealthygang</a></p><br>
-                <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://lightwidget.com/widgets/186d413701c1509f943f41e623c2415b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:70%;border:0;overflow:hidden;"></iframe>
+
+        <div class="container">
+            <section id="image-barres">
+                <img class="image-barres" src="imagesSiteGang/barres-roses.jpg">
+            </section>
+
+           
+
+                <ul class="divCertificate">
+                    <li id="bio">
+                        <img src="imagesSiteGang/icon-bio.png">
+                        <h4>Biologique</h4><br>
+                        <p>Dans un souci de qualité et de traçabilité, nous avons fait le choix de vous proposer des
+                            ingrédients qualitatifs issus de l’agriculture biologique. </p>
+                    </li>
+                    <li id="gluten">
+                        <img src="imagesSiteGang/icon-gluten.png">
+                        <h4>Sans gluten</h4><br>
+                        <p>Parce qu'il n'y a pas de raison pour que les intolérants et les allergiques au gluten ne
+                            puissent
+                            pas se faire plaisir, nos produits sont certifiés sans gluten. </p>
+                    </li>
+                    <li id="ogm">
+                        <img src="imagesSiteGang/icon-ogm.png">
+                        <h4>Sans additif</h4><br>
+                        <p>Nous utilisons des produits qui se conservent naturellement et qui ne nécessitent pas l’ajout
+                            d’additifs ou de conservateurs chimiques.</p>
+                    </li>
+                    <li id="local">
+                        <img src="imagesSiteGang/icon-local.png">
+                        <h4>Fabriqué en france</h4><br>
+                        <p>Afin de soutenir et de valoriser les filières de production françaises, l’ensemble de nos
+                            recettes sont élaborées et produites exclusivement en France. </p>
+
+                    </li>
+
+                </ul>
+
+           
+
+            <section id="image-box">
+                <img class="image-box" src="imagesSiteGang/barre-brownie-coco-boîte.jpg" style="margin :auto">
+            </section>
+
+
+            <footer>
+                <!-- LightWidget WIDGET -->
+                <div class="instagram">
+                    <p> Retrouvez-nous sur <a href="https://www.instagram.com/lehealthygang/" target="_blank"
+                            id="idInsta">@lehealthygang</a></p><br>
+                    <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://lightwidget.com/widgets/186d413701c1509f943f41e623c2415b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:70%;border:0;overflow:hidden;"></iframe>
 </div>  -->
-                <div id="instagram-feed-demo" class="instagram_feed"></div><br>
-                
+                    <div id="instagram-feed-demo" class="instagram_feed"></div><br>
 
-            
+
+
             </footer>
         </div>
         <div class="basdepage">
             <h2> GANG®</h2><br>
             <ul>
-            <li href="cgv.html">Mentions légales </li>
-            <li href="faq.html">FAQ </li>
-            <li href="contact.html">Contact </li>
+                <a href="cgv.html">Mentions légales </a>
+                <a href="faq.html">FAQ </a>
+                <a href="contact.html">Contact </a>
             </ul>
             <p>allo@lehealthygang.fr</p>
             <!-- <ul><li><a href="https://www.facebook.com/NOM">FACEBOOK <i class="fab fa-facebook-f" ></i></a></li></ul> -->
         </div>
-    </main>
+    
 </body>
 
 </html>

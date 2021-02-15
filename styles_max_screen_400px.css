@@ -1,0 +1,84 @@
+@media all and (max-device-width:480px){
+    #main-imageS
+    {
+        
+        width: 100%;
+        min-width: 450px;
+        height: 100vh;
+       
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header taille 400*/
+@media all and (max-device-width:400px){
+    .wrapper
+{
+    width: 100%;
+    margin: 0px;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    text-size-adjust: 100%;
+}
+.navGauche a{
+    pointer-events: none;
+    cursor: default;
+    font-size: 14px;
+    color: black;
+}
+.navDroite a{
+    pointer-events: none;
+    cursor: default;
+    font-size: 14px;
+    color: black;
+}
+/* .navGauche{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 15px;
+    margin-top: 30px;
+    width: 33%;
+    
+} */
+
+/* .navMidel{
+    display: flex;
+    justify-content: flex-start;
+    height: 80px;
+    width: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+} */
+
+/* .navDroite{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    width: 33%;
+    
+} */
+
+
+ nav ul li a
+{
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-size: 1.0rem;
+    color:black ;
+    position: absolute;
+}
+
+
+
+}
+
+
+ordi : min 970
+tablette : min 768 max 970
+mobile : max 768 
